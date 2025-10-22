@@ -146,14 +146,14 @@ void main()
     Tn = insertion_sort(A, N0);
     std::cout << "insertion method:\n";
     for (int k = 0; k < N0; k++)
-        std::cout << A[k] << '\n';
+        std::cout << A[k] << ' ';
     std::cout << "Its T = " << Tn << '\n';
     for (int k = 0; k < N0; k++)
         file >> A[k];
     std::cout << "choice method:\n";
     Tn = choice_sort(A, N0);
     for (int k = 0; k < N0; k++)
-        std::cout << A[k] << '\n';
+        std::cout << A[k] << ' ';
     std::cout << "Its T = " << Tn << '\n';
     for (int k = 0; k < N0; k++)
         file >> A[k];
@@ -161,7 +161,7 @@ void main()
     *TRn = 0;
     heap_sort(A, N0, TRn);
     for (int k = 0; k < N0; k++)
-        std::cout << A[k] << '\n';
+        std::cout << A[k] << ' ';
     std::cout << "Its T = " << *TRn << '\n';
     for (int k = 0; k < N0; k++)
         file >> A[k];
@@ -169,6 +169,6 @@ void main()
     *TRn = 0;
     merge_sort(A, N0, TRn);
     for (int k = 0; k < N0; k++)
-        std::cout << A[k] << '\n';
+        std::cout << A[k] << ' ';
     std::cout << "Its T = " << *TRn << '\n';
 }
